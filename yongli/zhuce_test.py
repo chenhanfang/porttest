@@ -38,4 +38,12 @@ class LoginTest(unittest.TestCase):
 
 
 if __name__=='__main__':
-    unittest.main()
+    # unittest.main()
+    test_cases = unittest.TestLoader().loadTestsFromTestCase( LoginTest)
+    test_suit = unittest.TestSuite()
+    test_suit.addTests(test_cases)
+    test_result = unittest.TextTestRunner(verbosity=2).run(test_suit)
+    print('testsRun:%s'%test_result.testsRun)
+    print('failures:%s'%len(test_result.failures))
+    print('error:%s'%len(test_result.errors))
+    print('skipped:%s'%len(test_result.skipped))
