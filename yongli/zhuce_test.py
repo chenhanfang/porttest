@@ -2,8 +2,9 @@ import unittest
 import requests
 
 class LoginTest(unittest.TestCase):
+    @classmethod###
     def setUp(self):
-        self.url='http://test.xdaili.cn:10005/ipagent/user/register'
+        self.url='http://xxxx:10005/ipagent/user/register'
         self.h={
         "Accept-Encoding": "gzip, deflate, sdch",
         "Accept-Language": "zh-CN,zh;q=0.8",
@@ -12,6 +13,7 @@ class LoginTest(unittest.TestCase):
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36',
          }
+
 
     def test_null(self):
         '''所有参数为空'''

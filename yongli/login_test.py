@@ -3,7 +3,7 @@ import requests
 
 class LoginTest(unittest.TestCase):
     def setUp(self):
-        self.url='http://test.xdaili.cn:10005/ipagent/user/login'
+        self.url='http://xxxxxx/ipagent/user/login'
         self.h={
         "Accept-Encoding": "gzip, deflate, sdch",
         "Accept-Language": "zh-CN,zh;q=0.8",
